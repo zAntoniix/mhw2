@@ -55,7 +55,7 @@ function uncheck(id, num)
 
 function elaboraRisultato()
 {
-  if (risposteTest.one !== risposteTest.two && risposteTest.two !== risposteTest.three)
+  if (risposteTest.one !== risposteTest.two && risposteTest.two !== risposteTest.three && risposteTest.one !== risposteTest.three)
     return risposteTest.one;
 
   if (risposteTest.one === risposteTest.two || risposteTest.one === risposteTest.three)
