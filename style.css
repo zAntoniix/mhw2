@@ -1,0 +1,93 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+.question-name {
+  background-size: cover;
+}
+
+.choice-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-bottom: 20px;
+}
+
+.choice-grid div {
+  background-color: #f4f4f4;
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+
+  width: 32.5%;
+  padding: 10px;
+  margin-top: 20px;
+
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.choice-grid div.checked {
+  background-color: #cfe3ff;
+}
+
+.unchecked {
+  opacity: 0.6;
+}
+
+#result {
+  border: 2px solid black;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#result h1 {
+  margin-top: 0px;
+}
+
+#result p {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+#result button {
+  width: 100%;
+  cursor: pointer;
+  background-color: #cecece;
+  height: 50px;
+  text-align: center;
+  
+}
+
+#result button:hover {
+  background-color: #e0e0e0;
+}
+
+.mostra {
+  display: none;
+}
+
+/* Sezione Mobile */
+@media (max-width: 700px) {
+  article {
+    width: 95%;
+  }
+
+  header div span {
+    display: none;
+  }
+
+  .question-name h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  article {
+    width: 49%;
+  }
+
+  .question-name h1 {
+    font-size: 30px;
+  }
+}
